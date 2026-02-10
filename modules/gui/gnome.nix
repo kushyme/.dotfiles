@@ -30,8 +30,7 @@
     home-manager.useUserPackages = true;
     home-manager.users.${hostVariables.username} = {
       home.packages = with pkgs; [
-        zsh-autosuggestions
-        zsh-syntax-highlighting
+
       ];
       programs.zsh = {
         enable = true;
@@ -39,7 +38,7 @@
 
         oh-my-zsh = {
           enable = true;
-          plugins = ["git" "zsh-autosuggestions" "zsh-syntax-highlighting"];
+          plugins = ["git"];
           theme = "robbyrussell";
         };
       };
@@ -55,6 +54,11 @@
             pkgs.gnomeExtensions.system-monitor.extensionUuid
             pkgs.gnomeExtensions.clipboard-history.extensionUuid
           ];
+        };
+        "org/gnome/desktop/background" = {
+          picture-uri = "file:///home/${hostVariables.username}/.dotfiles/assets/aperturescience.png";
+          picture-uri-dark = "file:///home/${hostVariables.username}/.dotfiles/assets/aperturescience.png";
+          picture-options = "zoom"; # scaled, none, centred, zoom, streched, wallpaper, spanned
         };
         "org/gnome/desktop/interface" = {
           clock-show-seconds = true;

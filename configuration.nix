@@ -25,6 +25,10 @@
   modules.system.bootanimation.enable = hostVariables.modules.systemSettings.bootanimation;
   modules.system.gaming.enable = hostVariables.modules.systemSettings.gaming;
 
+  system.activationScripts.script.text = ''
+    cp /home/${hostVariables.username}/.dotfiles/assets/donkey.jpg /var/lib/AccountsService/icons/${hostVariables.username}
+  '';
+
   environment.systemPackages = with pkgs; [
     alejandra
   ];
