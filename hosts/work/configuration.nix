@@ -94,6 +94,7 @@
     obsidian
     gh
     python313
+    libreoffice-qt
   ];
 
   #Yubikey
