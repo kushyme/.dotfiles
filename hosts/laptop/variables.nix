@@ -3,24 +3,19 @@ let
 in
   default
   // {
-    host = "personal-laptop";
+    host = "laptop";
     modules =
       default.modules
       // {
         driver =
           default.modules.driver
           // {
-            nvidia = true;
+            nvidia = false;
           };
         software =
           default.modules.software
           // {
-            display-link = true;
-          };
-        systemSettings =
-          default.modules.systemSettings
-          // {
-            gaming = true;
+            display-link = false;
           };
       };
     git =

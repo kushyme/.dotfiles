@@ -30,7 +30,6 @@
     home-manager.useUserPackages = true;
     home-manager.users.${hostVariables.username} = {
       home.packages = with pkgs; [
-
       ];
       programs.zsh = {
         enable = true;

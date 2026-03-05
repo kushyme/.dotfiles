@@ -85,7 +85,6 @@
   environment.systemPackages = with pkgs; [
     unstable.brave
     unstable.bruno
-    spotify
     neofetch
     jetbrains.idea
     discord
@@ -94,6 +93,9 @@
     vscode-with-extensions
     obsidian
     gh
+    python313
+    libreoffice-qt
+    wireguard-tools
   ];
 
   #Yubikey

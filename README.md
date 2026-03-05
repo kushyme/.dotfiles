@@ -16,6 +16,7 @@ This repository contains my modular NixOS system configuration, powered by [Nix 
 ### 1. Clone into `.dotfiles`
 
 ```bash
+Be in /home/{username}/
 git clone https://github.com/kushyme/.dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ```
