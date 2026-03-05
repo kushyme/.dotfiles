@@ -95,6 +95,7 @@
     gh
     python313
     libreoffice-qt
+    wireguard-tools
   ];
 
   #Yubikey
