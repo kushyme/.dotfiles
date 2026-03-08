@@ -6,7 +6,7 @@
     nixfmt = "alejandra ./";
     wg-up = "sudo wg-quick up /etc/wireguard/wg_config.conf";
     wg-down = "sudo wg-quick down /etc/wireguard/wg_config.conf";
-    restart = "sudo systemctl reboot";
-    shutdown = "sudo systemctl poweroff";
+    restart = "systemctl reboot";
+    shutdown = "systemctl poweroff";
   };
 }
