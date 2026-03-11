@@ -15,7 +15,7 @@ in
         software =
           default.modules.software
           // {
-            display-link = true;
+            display-link = false;
           };
         systemSettings =
           default.modules.systemSettings
@@ -36,6 +36,18 @@ in
     gnome =
       default.gnome
       // {
+        fav-icon = [
+          "org.gnome.Nautilus.desktop"
+          "discord.desktop"
+          "brave-browser.desktop"
+          "spotify.desktop"
+          "steam.desktop"
+          "idea.desktop"
+          "bruno.desktop"
+          "org.keepassxc.KeePassXC.desktop"
+          "obsidian.desktop"
+          "org.gnome.Console.desktop"
+        ];
         idle-delay = 300;
       };
   }

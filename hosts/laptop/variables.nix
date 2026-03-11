@@ -31,6 +31,19 @@ in
     gnome =
       default.gnome
       // {
+        fav-icon = [
+          "org.gnome.Nautilus.desktop"
+          "discord.desktop"
+          "brave-browser.desktop"
+          "brave-pjibgclleladliembfgfagdaldikeohf-Default.desktop"
+          "brave-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"
+          "brave-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"
+          "idea.desktop"
+          "bruno.desktop"
+          "org.keepassxc.KeePassXC.desktop"
+          "obsidian.desktop"
+          "org.gnome.Console.desktop"
+        ];
         idle-delay = 300;
       };
   }
