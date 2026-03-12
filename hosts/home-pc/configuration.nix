@@ -14,6 +14,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [ "usbhid.mousepoll=1" ];
 
   networking.hostName = hostVariables.host; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -95,6 +96,11 @@
     obsidian
     gh
   ];
+
+  # Possible fix for controller latency
+  boot.extraModprobeConfig = ''
+    options xpad triggers_to_buttons=0
+  '';
 
   #Yubikey
   services.pcscd.enable = false;
