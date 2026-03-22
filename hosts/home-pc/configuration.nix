@@ -95,6 +95,7 @@
     vscode-with-extensions
     obsidian
     gh
+    lunar-client
   ];
 
   # Possible fix for controller latency
