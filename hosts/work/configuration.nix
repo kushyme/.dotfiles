@@ -96,7 +96,7 @@
     python313
     libreoffice-qt
     wireguard-tools
-    github-copilot-cli
+    copilot-cli
   ];
 
   #Yubikey
