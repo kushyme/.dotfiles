@@ -8,5 +8,6 @@
     wg-down = "sudo wg-quick down /etc/wireguard/wg_config.conf";
     restart = "systemctl reboot";
     shutdown = "systemctl poweroff";
+    randomizer = "/home/${hostVariables.host}/Documents/poke_randomizer/launcher_UNIX.sh";
   };
 }

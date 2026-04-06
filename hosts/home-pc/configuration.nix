@@ -96,6 +96,11 @@
     obsidian
     gh
     lunar-client
+    desmume
+    azahar
+    zip
+    unzip
+    jdk
   ];
 
   # Possible fix for controller latency
