@@ -101,6 +101,7 @@
     zip
     unzip
     jdk
+    libreoffice-qt
   ];
 
   # Possible fix for controller latency
