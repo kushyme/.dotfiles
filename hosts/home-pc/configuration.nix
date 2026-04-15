@@ -102,6 +102,7 @@
     unzip
     jdk
     libreoffice-qt
+    docker
   ];
 
   # Possible fix for controller latency
