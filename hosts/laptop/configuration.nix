@@ -97,6 +97,8 @@
     libreoffice-qt
     wireguard-tools
     spotify
+    zip
+    unzip
   ];
 
   #Yubikey

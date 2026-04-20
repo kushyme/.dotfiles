@@ -96,6 +96,8 @@
     python313
     libreoffice-qt
     wireguard-tools
+    zip
+    unzip
   ];
 
   #Yubikey
