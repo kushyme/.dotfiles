@@ -1,27 +1,27 @@
-# ⚙️ NixOS Multi-Host Configuration
+# NixOS Multi-Host Configuration
 
-This repository contains my modular NixOS system configuration, powered by [Nix Flakes](https://nixos.wiki/wiki/Flakes) and [Home Manager](https://nix-community.github.io/home-manager/).
+This is my personal NixOS configuration. It's modular and uses [Nix Flakes](https://nixos.wiki/wiki/Flakes) and [Home Manager](https://nix-community.github.io/home-manager/).
 
-## ✅ Features
+## Features
 
-- 🔁 Flake-based for reproducibility
-- 🧩 Modular configuration per host
-- 💻 Includes Home Manager for user-level setup
-- 📁 Centralized `variables.nix` for system flags and module toggles
+- Reproducible setup using Flakes
+- Modular structure that works across different hosts
+- Integrated Home Manager for user configuration
+- A central `variables.nix` file to manage system flags and modules
 
 ---
 
-## 🏗️ Getting Started
+## Getting Started
 
-### 1. Clone into `.dotfiles`
+### 1. Clone the repository
 
 ```bash
-Be in /home/{username}/
+Make sure you are in your home directory
 git clone https://github.com/kushyme/.dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ```
 
-### 2. Use an existing host
+### 2. Set up a host
 
 Edit:
 
@@ -46,11 +46,11 @@ or
 switch
 ```
 
-> `rebuild` and `switch` is an alias for `nixos-rebuild` with predefined arguments.
+> `rebuild` and `switch` are aliases for `nixos-rebuild` with predefined arguments.
 
 ---
 
-## ➕ Adding a New Host
+## Adding a New Host
 
 1. Create a new folder in `./hosts/`, e.g. `home-pc`
 2. Add these files:
@@ -127,9 +127,9 @@ nixosConfigurations = {
 
 ---
 
-## 🛠 Troubleshooting & Known Issues
+## Troubleshooting
 
-### ❗ `attribute 'xyz' missing`
+### Missing attributes
 
 Ensure that your `variables.nix` file contains all required attributes. Use a central default like:
 
@@ -142,16 +142,16 @@ This ensures every module gets all expected keys.
 
 
 
-### 🧨 Module flags not working
+### Module flags aren't working
 
-Make sure you’re not accidentally shadowing or omitting expected fields:
+Make sure you're not accidentally shadowing or omitting expected fields:
 
 - Use `default.modules // { ... }` instead of `{}` when overriding
 - Use `lib.attrByPath` or `lib.getAttrFromPath` for optional flags
 
 ---
 
-### 🔄 Flake not updating correctly
+### Issues with flake updates
 
 Run:
 
