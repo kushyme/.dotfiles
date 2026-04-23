@@ -98,6 +98,7 @@
     wireguard-tools
     zip
     unzip
+    lmstudio
   ];
 
   #Yubikey
