@@ -103,6 +103,7 @@
     jdk
     libreoffice-qt
     docker
+    codex
   ];
 
   # Possible fix for controller latency

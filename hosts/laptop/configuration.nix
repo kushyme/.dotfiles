@@ -99,6 +99,7 @@
     spotify
     zip
     unzip
+    codex
   ];
 
   #Yubikey

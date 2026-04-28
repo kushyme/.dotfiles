@@ -99,6 +99,7 @@
     zip
     unzip
     lmstudio
+    codex
   ];
 
   #Yubikey
