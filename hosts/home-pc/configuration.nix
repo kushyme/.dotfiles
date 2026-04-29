@@ -108,7 +108,7 @@
     jdk
     libreoffice-qt
     docker
-    codex
+    dbeaver-bin
   ];
 
   # Possible fix for controller latency
