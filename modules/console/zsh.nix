@@ -27,6 +27,11 @@
           plugins = ["git"];
           theme = "robbyrussell";
         };
+
+        initContent = ''
+          export PATH="$HOME/.npm-global/bin:$PATH"
+        '';
+
       };
     };
   };
