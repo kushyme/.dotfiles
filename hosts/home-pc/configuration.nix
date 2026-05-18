@@ -109,6 +109,7 @@
     libreoffice-qt
     docker
     dbeaver-bin
+    nodejs_24
   ];
 
   # Possible fix for controller latency
