@@ -20,13 +20,6 @@
           interactiveShellInit = ''
             # Disable greeting
             set fish_greeting
-
-            function __atuin_install --on-event fish_prompt
-              functions -e __atuin_install
-              bind -M insert -k up _atuin_bind_up
-              bind -M default -k up _atuin_bind_up
-              bind up _atuin_bind_up
-            end
           '';
         };
         programs.oh-my-posh = {
@@ -34,15 +27,6 @@
           enableFishIntegration = true;
           settings = builtins.fromJSON (builtins.unsafeDiscardStringContext (builtins.readFile ./oh-my-posh/theme/atomic.omp.json));
         };
-        programs.atuin = {
-          enable = true;
-          enableFishIntegration = true;
-        };
-        home.file.".config/atuin/config.toml".text = ''
-          enter_accept = true
-          filter_mode = "workspace"
-          workspaces = true
-        '';
       }
 
       (lib.mkIf (hostVariables.host == "work") {

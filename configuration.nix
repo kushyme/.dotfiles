@@ -10,6 +10,7 @@
     ./home.nix
   ];
   # Modules
+  modules.console.atuin.enable = hostVariables.modules.console.atuin;
   modules.console.fish.enable = hostVariables.modules.console.fish;
   modules.console.zsh.enable = hostVariables.modules.console.zsh;
   modules.driver.amdgpu.enable = hostVariables.modules.driver.amdgpu;

@@ -7,6 +7,7 @@
   stateVersion = "25.11";
   modules = {
     console = {
+      atuin = true;
       fish = false;
       zsh = true;
     };
