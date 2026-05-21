@@ -48,6 +48,7 @@ in
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"
           "org.gnome.Console.desktop"
+          "org.gnome.Geary.desktop"
         ];
         idle-delay = 300;
       };
