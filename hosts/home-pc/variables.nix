@@ -16,6 +16,7 @@ in
           default.modules.software
           // {
             display-link = false;
+            noisetorch = false;
           };
         systemSettings =
           default.modules.systemSettings

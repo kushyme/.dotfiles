@@ -110,6 +110,7 @@
     docker
     dbeaver-bin
     nodejs_24
+    easyeffects
   ];
 
   # Possible fix for controller latency
