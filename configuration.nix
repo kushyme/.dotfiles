@@ -2,6 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 {
+  inputs,
   pkgs,
   hostVariables,
   ...
@@ -30,9 +31,13 @@
     cp /home/${hostVariables.username}/.dotfiles/assets/donkey.jpg /var/lib/AccountsService/icons/${hostVariables.username}
   '';
 
-  environment.systemPackages = with pkgs; [
-    alejandra
-  ];
+  environment.systemPackages =
+    (with pkgs; [
+      alejandra
+    ])
+    ++ [
+      inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.junie
+    ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
