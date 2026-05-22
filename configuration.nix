@@ -48,4 +48,6 @@
     enable = true;
     flake = "/home/${hostVariables.username}/.dotfiles";
   };
+
+  programs.nix-ld.enable = true;
 }
