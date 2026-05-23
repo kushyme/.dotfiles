@@ -37,6 +37,7 @@
     ])
     ++ [
       inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.junie
+      inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.codex
     ];
 
   fonts.packages = with pkgs; [
