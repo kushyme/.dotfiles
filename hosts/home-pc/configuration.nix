@@ -111,6 +111,7 @@
     dbeaver-bin
     nodejs_24
     easyeffects
+    modrinth-app
   ];
 
   # Possible fix for controller latency
