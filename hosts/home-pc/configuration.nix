@@ -111,7 +111,16 @@
     dbeaver-bin
     nodejs_24
     easyeffects
-    modrinth-app
+    # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes.
+    (symlinkJoin {
+      name = "modrinth-app-wayland-fix";
+      paths = [modrinth-app];
+      nativeBuildInputs = [makeWrapper];
+      postBuild = ''
+        wrapProgram $out/bin/ModrinthApp \
+          --set __NV_DISABLE_EXPLICIT_SYNC 1
+      '';
+    })
   ];
 
   # Possible fix for controller latency
