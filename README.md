@@ -8,6 +8,7 @@ This is my personal NixOS configuration. It's modular and uses [Nix Flakes](http
 - Modular structure that works across different hosts
 - Integrated Home Manager for user configuration
 - A central `variables.nix` file to manage system flags and modules
+- KVM/libvirt virtualization support with virt-manager for Windows VMs
 
 ---
 

@@ -30,6 +30,7 @@
     systemSettings = {
       bootanimation = true;
       gaming = false;
+      virtualization = false;
     };
   };
   git = {
