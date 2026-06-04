@@ -11,7 +11,6 @@
   config = lib.mkIf config.modules.gui.gnome.enable {
     services.displayManager.gdm = {
       enable = true;
-      wayland = true;
     };
     services.desktopManager.gnome.enable = true;
 
@@ -42,7 +41,7 @@
         };
       };
 
-      home.stateVersion = "25.11";
+      home.stateVersion = "26.05";
       dconf.settings = {
         "org/gnome/shell" = {
           disable-user-extensions = false;

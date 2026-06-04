@@ -92,7 +92,6 @@
         })
     unstable.bruno
     spotify
-    neofetch
     jetbrains.idea
     discord
     keepassxc

@@ -90,7 +90,6 @@
           ];
         })
     unstable.bruno
-    neofetch
     jetbrains.idea
     discord
     keepassxc
