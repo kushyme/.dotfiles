@@ -90,7 +90,7 @@
           ];
         })
     unstable.bruno
-    jetbrains.idea
+    unstable.jetbrains.idea
     discord
     keepassxc
     github-desktop
