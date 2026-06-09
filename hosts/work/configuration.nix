@@ -104,6 +104,7 @@
     unzip
     lmstudio
     nodejs_24
+    uv
   ];
 
   #Yubikey
