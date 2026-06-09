@@ -19,7 +19,7 @@
         forceOverwriteSettings = true;
 
         daemon = {
-          enable = true;
+          enable = false;
           logLevel = "warn";
         };
 
