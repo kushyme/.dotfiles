@@ -110,8 +110,7 @@
     dbeaver-bin
     nodejs_24
     easyeffects
-    # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes.
-    (symlinkJoin {
+    (symlinkJoin { # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes.
       name = "modrinth-app-wayland-fix";
       paths = [modrinth-app];
       nativeBuildInputs = [makeWrapper];
@@ -120,6 +119,7 @@
           --set __NV_DISABLE_EXPLICIT_SYNC 1
       '';
     })
+    gimp
   ];
 
   # Possible fix for controller latency
