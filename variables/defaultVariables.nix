@@ -24,6 +24,7 @@
       flatpak = false;
       git = true;
       noisetorch = true;
+      tmux = false;
       wine = false;
       ollama = false;
     };

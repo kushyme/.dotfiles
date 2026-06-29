@@ -31,6 +31,7 @@
   modules.software.flatpak.enable = hostVariables.modules.software.flatpak;
   modules.software.git.enable = hostVariables.modules.software.git;
   modules.software.noisetorch.enable = hostVariables.modules.software.noisetorch;
+  modules.software.tmux.enable = hostVariables.modules.software.tmux;
   modules.software.wine.enable = hostVariables.modules.software.wine;
   modules.software.ollama.enable = hostVariables.modules.software.ollama;
   modules.system.bootanimation.enable = hostVariables.modules.systemSettings.bootanimation;

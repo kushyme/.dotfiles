@@ -20,6 +20,7 @@ in
             flatpak = false;
             git = true;
             noisetorch = false;
+            tmux = true;
             wine = false;
             ollama = false;
           };
