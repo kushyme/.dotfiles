@@ -25,6 +25,9 @@
           };
           init.defaultBranch = hostVariables.git.extraConfig.defaultBranch;
           credential.helper = hostVariables.git.extraConfig.credential-helper;
+          pull = {
+            rebase = true;
+          };
         };
         includes = hostVariables.git.includes;
       };
