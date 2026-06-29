@@ -83,12 +83,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    (unstable.brave.override{
-          commandLineArgs = [
-            "--enable-features=UseOzonePlatform"
-            "--ozone-platform=wayland"
-          ];
-        })
+    (unstable.brave.override {
+      commandLineArgs = [
+        "--enable-features=UseOzonePlatform"
+        "--ozone-platform=wayland"
+      ];
+    })
     unstable.bruno
     unstable.jetbrains.idea
     discord

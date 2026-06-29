@@ -84,12 +84,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    (unstable.brave.override{
-          commandLineArgs = [
-            "--enable-features=UseOzonePlatform"
-            "--ozone-platform=wayland"
-          ];
-        })
+    (unstable.brave.override {
+      commandLineArgs = [
+        "--enable-features=UseOzonePlatform"
+        "--ozone-platform=wayland"
+      ];
+    })
     unstable.bruno
     spotify
     jetbrains.idea
@@ -110,7 +110,8 @@
     dbeaver-bin
     nodejs_24
     easyeffects
-    (symlinkJoin { # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes
+    (symlinkJoin {
+      # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes
       name = "modrinth-app-wayland-fix";
       paths = [modrinth-app];
       nativeBuildInputs = [makeWrapper];

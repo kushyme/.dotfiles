@@ -1,24 +1,18 @@
 {hostVariables, ...}: {
-  nix = {
+  nix = let
+    nixSettings = builtins.fromJSON (builtins.readFile ../../nix-settings.json);
+  in {
     gc = {
       automatic = true;
       options = "--delete-older-than 3d";
     };
-    settings = {
+    settings = rec {
       auto-optimise-store = true;
-      experimental-features = [
-        "nix-command"
-        "flakes"
-      ];
       trusted-users = [hostVariables.username];
-      substituters = [
-        "https://cache.nixos.org/"
-        "https://cache.numtide.com"
-      ];
-      trusted-public-keys = [
-        "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-        "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
-      ];
+      experimental-features = nixSettings."experimental-features";
+      substituters = nixSettings.substituters;
+      trusted-public-keys = nixSettings."trusted-public-keys";
+      trusted-substituters = substituters;
     };
     extraOptions = ''
       !include /home/${hostVariables.username}/.nix.conf
