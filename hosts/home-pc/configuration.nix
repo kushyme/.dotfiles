@@ -122,6 +122,7 @@
     })
     gimp
     fastfetch
+    geary
   ];
 
   # Possible fix for controller latency

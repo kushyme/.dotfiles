@@ -18,6 +18,9 @@
     layout = "de";
     variant = "";
   };
+  services.openssh = {
+    enable = true;
+  };
   console.keyMap = "de";
   security.rtkit.enable = true;
   users.users.${hostVariables.username} = {
