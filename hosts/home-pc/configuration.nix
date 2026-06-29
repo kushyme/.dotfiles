@@ -110,7 +110,7 @@
     dbeaver-bin
     nodejs_24
     easyeffects
-    (symlinkJoin { # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes.
+    (symlinkJoin { # Work around WebKitGTK/NVIDIA Wayland explicit-sync crashes
       name = "modrinth-app-wayland-fix";
       paths = [modrinth-app];
       nativeBuildInputs = [makeWrapper];
