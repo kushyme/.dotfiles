@@ -12,6 +12,9 @@
     hostName = hostVariables.host;
     networkmanager.enable = true;
   };
+  services.openssh = {
+    enable = true;
+  };
   time.timeZone = "Europe/Berlin";
   services.xserver.enable = true;
   services.xserver.xkb = {
