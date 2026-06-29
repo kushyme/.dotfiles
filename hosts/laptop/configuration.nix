@@ -103,6 +103,7 @@
     spotify
     zip
     unzip
+    fastfetch
   ];
 
   #Yubikey

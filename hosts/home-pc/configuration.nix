@@ -120,6 +120,7 @@
       '';
     })
     gimp
+    fastfetch
   ];
 
   # Possible fix for controller latency

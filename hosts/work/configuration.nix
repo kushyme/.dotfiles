@@ -105,6 +105,7 @@
     lmstudio
     nodejs_24
     uv
+    fastfetch
   ];
 
   #Yubikey
