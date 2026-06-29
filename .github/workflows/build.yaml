@@ -30,3 +30,8 @@ jobs:
         uses: ./.github/actions/build-nix-host
         with:
           host: work
+
+      - name: "Build homelab Configurations"
+        uses: ./.github/actions/build-nix-host
+        with:
+          host: homelab
