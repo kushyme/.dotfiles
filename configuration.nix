@@ -26,6 +26,9 @@
   modules.driver.amdgpu.enable = hostVariables.modules.driver.amdgpu;
   modules.driver.nvidia.enable = hostVariables.modules.driver.nvidia;
   modules.gui.gnome.enable = hostVariables.modules.gui.gnome;
+  modules.homelab.netbird.enable = hostVariables.modules.homelab.netbird;
+  modules.homelab.obsidian.enable = hostVariables.modules.homelab.obsidian;
+  modules.homelab.opencloud.enable = hostVariables.modules.homelab.opencloud;
   modules.software.displaylink.enable = hostVariables.modules.software.display-link;
   modules.software.docker.enable = hostVariables.modules.software.docker;
   modules.software.flatpak.enable = hostVariables.modules.software.flatpak;

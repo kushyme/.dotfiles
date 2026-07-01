@@ -18,6 +18,11 @@
     gui = {
       gnome = true;
     };
+    homelab = {
+      netbird = false;
+      obsidian = false;
+      opencloud = false;
+    };
     software = {
       display-link = true;
       docker = true;
@@ -49,5 +54,34 @@
   gnome = {
     fav-icon = [];
     idle-delay = 0;
+  };
+  netbird = {
+    client = {
+      enable = true;
+      autoStart = true;
+      environment = {};
+      hardened = false;
+      interface = "wt0";
+      logLevel = "info";
+      managementUrl = null;
+      port = 51820;
+      setupKeyFile = null;
+      useRoutingFeatures = "none";
+    };
+    server = {
+      enable = false;
+      domain = "";
+      enableNginx = true;
+      enableCoturn = true;
+      acmeEmail = "";
+      oidcConfigEndpoint = "";
+      authAuthority = "";
+      authAudience = "netbird";
+      authClientId = "netbird";
+      authSupportedScopes = "openid profile email";
+      coturnPasswordFile = "/var/lib/netbird/secrets/coturn-password";
+      dataStoreEncryptionKeyFile = "/var/lib/netbird/secrets/data-store-encryption-key";
+      turnSecretFile = "/var/lib/netbird/secrets/turn-secret";
+    };
   };
 }
