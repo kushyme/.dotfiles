@@ -48,4 +48,9 @@ in
           }
         ];
       };
+    opencloud =
+      default.opencloud
+      // {
+        url = "https://100.96.151.104:9200";
+      };
   }

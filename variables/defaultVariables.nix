@@ -97,7 +97,7 @@
   opencloud = {
     address = "0.0.0.0";
     environment = {
-      OC_INSECURE = "true";
+      OC_INSECURE = "false";
     };
     environmentFile = null;
     networkInterface = "wt0";

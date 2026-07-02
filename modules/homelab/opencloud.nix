@@ -8,7 +8,7 @@
   url =
     if cfg.url != null
     then cfg.url
-    else "http://${hostVariables.host}:${toString cfg.port}";
+    else "https://${hostVariables.host}:${toString cfg.port}";
 in {
   options.modules.homelab.opencloud = {
     enable = lib.mkEnableOption "OpenCloud";

@@ -1,0 +1,31 @@
+Jul 02 19:16:15 homelab systemd[1]: Starting Provision initial OpenCloud config...
+Jul 02 19:16:15 homelab opencloud-init-config-start[29600]: + config=/etc/opencloud/opencloud.yaml
+Jul 02 19:16:15 homelab opencloud-init-config-start[29600]: + '[' '!' -e /etc/opencloud/opencloud.yaml ']'
+Jul 02 19:16:15 homelab opencloud-init-config-start[29600]: + echo 'Provisioning initial OpenCloud config...'
+Jul 02 19:16:15 homelab opencloud-init-config-start[29600]: Provisioning initial OpenCloud config...
+Jul 02 19:16:15 homelab opencloud-init-config-start[29600]: + opencloud init --insecure true --config-path /etc/opencloud
+Jul 02 19:16:15 homelab opencloud-init-config-start[29635]: =========================================
+Jul 02 19:16:15 homelab opencloud-init-config-start[29635]:  generated OpenCloud Config
+Jul 02 19:16:15 homelab opencloud-init-config-start[29635]: =========================================
+Jul 02 19:16:15 homelab opencloud-init-config-start[29635]:  configpath : /etc/opencloud/opencloud.yaml
+Jul 02 19:16:15 homelab opencloud-init-config-start[29635]:  user       : admin
+Jul 02 19:16:15 homelab opencloud-init-config-start[29635]:  password   : B^8+SLyUCwTR-o93MQtCpF=83#E9udKm
+Jul 02 19:16:15 homelab opencloud-init-config-start[29600]: + chown opencloud:opencloud /etc/opencloud/opencloud.yaml
+Jul 02 19:16:15 homelab systemd[1]: opencloud-init-config.service: Deactivated successfully.
+Jul 02 19:16:15 homelab systemd[1]: Finished Provision initial OpenCloud config.
+Jul 02 19:16:15 homelab systemd[1]: opencloud-init-config.service: Consumed 133ms CPU time over 151ms wall clock time, 33.9M memory peak, 6.5M read from disk.
+Jul 02 19:39:09 homelab systemd[1]: Starting Provision initial OpenCloud config...
+Jul 02 19:39:09 homelab opencloud-init-config-start[33320]: + config=/etc/opencloud/opencloud.yaml
+Jul 02 19:39:09 homelab opencloud-init-config-start[33320]: + '[' '!' -e /etc/opencloud/opencloud.yaml ']'
+Jul 02 19:39:09 homelab systemd[1]: opencloud-init-config.service: Deactivated successfully.
+Jul 02 19:39:09 homelab systemd[1]: Finished Provision initial OpenCloud config.
+Jul 02 19:39:31 homelab systemd[1]: Starting Provision initial OpenCloud config...
+Jul 02 19:39:31 homelab opencloud-init-config-start[33848]: + config=/etc/opencloud/opencloud.yaml
+Jul 02 19:39:31 homelab opencloud-init-config-start[33848]: + '[' '!' -e /etc/opencloud/opencloud.yaml ']'
+Jul 02 19:39:31 homelab systemd[1]: opencloud-init-config.service: Deactivated successfully.
+Jul 02 19:39:31 homelab systemd[1]: Finished Provision initial OpenCloud config.
+Jul 02 20:03:15 homelab systemd[1]: Starting Provision initial OpenCloud config...
+Jul 02 20:03:15 homelab opencloud-init-config-start[34687]: + config=/etc/opencloud/opencloud.yaml
+Jul 02 20:03:15 homelab opencloud-init-config-start[34687]: + '[' '!' -e /etc/opencloud/opencloud.yaml ']'
+Jul 02 20:03:15 homelab systemd[1]: opencloud-init-config.service: Deactivated successfully.
+Jul 02 20:03:15 homelab systemd[1]: Finished Provision initial OpenCloud config.

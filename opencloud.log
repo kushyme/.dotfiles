@@ -1,0 +1,120 @@
+Jul 02 19:39:34 homelab systemd[1]: opencloud.service: Consumed 257ms CPU time over 1.189s wall clock time, 47.4M memory peak, 56K written to disk, 166.4K incoming IP traffic, 166.5K outgoing IP traffic.
+Jul 02 19:39:34 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 3.
+Jul 02 19:39:34 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 19:39:35 homelab opencloud[33958]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T19:39:35+02:00","message":"could not bootstrap idp"}
+Jul 02 19:39:35 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 19:39:35 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 19:39:35 homelab systemd[1]: opencloud.service: Consumed 244ms CPU time over 1.246s wall clock time, 43.9M memory peak, 56K written to disk, 107.8K incoming IP traffic, 108K outgoing IP traffic.
+Jul 02 19:39:35 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 4.
+Jul 02 19:39:35 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 19:39:36 homelab opencloud[33973]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T19:39:36+02:00","message":"could not bootstrap idp"}
+Jul 02 19:39:36 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 19:39:36 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 19:39:36 homelab systemd[1]: opencloud.service: Consumed 267ms CPU time over 1.341s wall clock time, 48.2M memory peak, 64K written to disk, 145.5K incoming IP traffic, 145.7K outgoing IP traffic.
+Jul 02 19:39:37 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 5.
+Jul 02 19:39:37 homelab systemd[1]: opencloud.service: Start request repeated too quickly.
+Jul 02 19:39:37 homelab systemd[1]: opencloud.service: Failed with result 'start-limit-hit'.
+Jul 02 19:39:37 homelab systemd[1]: Failed to start OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 19:39:37 homelab systemd[1]: opencloud.service: Consumed 267ms CPU time over 321ms wall clock time, 48.2M memory peak, 64K written to disk, 145.5K incoming IP traffic, 145.7K outgoing IP traffic.
+Jul 02 20:03:15 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:03:16 homelab opencloud[34856]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:03:16+02:00","message":"could not bootstrap idp"}
+Jul 02 20:03:16 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:03:16 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:03:16 homelab systemd[1]: opencloud.service: Consumed 215ms CPU time over 861ms wall clock time, 39.5M memory peak, 40K written to disk, 118.3K incoming IP traffic, 118.3K outgoing IP traffic.
+Jul 02 20:03:16 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 1.
+Jul 02 20:03:16 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:03:17 homelab opencloud[34873]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:03:17+02:00","message":"could not bootstrap idp"}
+Jul 02 20:03:17 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:03:17 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:03:17 homelab systemd[1]: opencloud.service: Consumed 252ms CPU time over 1.243s wall clock time, 46.4M memory peak, 64K written to disk, 128.6K incoming IP traffic, 128.7K outgoing IP traffic.
+Jul 02 20:03:18 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 2.
+Jul 02 20:03:18 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:03:19 homelab opencloud[34917]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:03:19+02:00","message":"could not bootstrap idp"}
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Consumed 248ms CPU time over 1.020s wall clock time, 45.1M memory peak, 64K written to disk, 174.5K incoming IP traffic, 174.6K outgoing IP traffic.
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 3.
+Jul 02 20:03:19 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:03:19 homelab opencloud[34989]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:03:19+02:00","message":"could not bootstrap idp"}
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Consumed 264ms CPU time over 770ms wall clock time, 46.7M memory peak, 80K written to disk, 167.5K incoming IP traffic, 167.6K outgoing IP traffic.
+Jul 02 20:03:19 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 4.
+Jul 02 20:03:19 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:03:21 homelab opencloud[35004]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:03:21+02:00","message":"could not bootstrap idp"}
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Consumed 184ms CPU time over 1.264s wall clock time, 32.7M memory peak, 72K written to disk, 44.8K incoming IP traffic, 44.8K outgoing IP traffic.
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 5.
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Start request repeated too quickly.
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Failed with result 'start-limit-hit'.
+Jul 02 20:03:21 homelab systemd[1]: Failed to start OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:03:21 homelab systemd[1]: opencloud.service: Consumed 184ms CPU time over 149ms wall clock time, 32.7M memory peak, 72K written to disk, 44.8K incoming IP traffic, 44.8K outgoing IP traffic.
+Jul 02 20:14:14 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:14:14 homelab opencloud[35183]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:14:14+02:00","message":"could not bootstrap idp"}
+Jul 02 20:14:14 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:14:14 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:14:14 homelab systemd[1]: opencloud.service: Consumed 164ms CPU time over 525ms wall clock time, 31.2M memory peak, 64K written to disk, 14.3K incoming IP traffic, 14.4K outgoing IP traffic.
+Jul 02 20:14:14 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 1.
+Jul 02 20:14:14 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:14:16 homelab opencloud[35225]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:14:16+02:00","message":"could not bootstrap idp"}
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Consumed 228ms CPU time over 1.328s wall clock time, 40.2M memory peak, 72K written to disk, 147.4K incoming IP traffic, 147.5K outgoing IP traffic.
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 2.
+Jul 02 20:14:16 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:14:16 homelab opencloud[35239]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:14:16+02:00","message":"could not bootstrap idp"}
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Consumed 201ms CPU time over 727ms wall clock time, 38.7M memory peak, 88K written to disk, 81.7K incoming IP traffic, 81.7K outgoing IP traffic.
+Jul 02 20:14:16 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 3.
+Jul 02 20:14:16 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:14:17 homelab opencloud[35254]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:14:17+02:00","message":"could not bootstrap idp"}
+Jul 02 20:14:17 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:14:17 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:14:17 homelab systemd[1]: opencloud.service: Consumed 199ms CPU time over 709ms wall clock time, 36.4M memory peak, 88K written to disk, 52.7K incoming IP traffic, 52.8K outgoing IP traffic.
+Jul 02 20:14:17 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 4.
+Jul 02 20:14:17 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:14:18 homelab opencloud[35268]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:14:18+02:00","message":"could not bootstrap idp"}
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Consumed 242ms CPU time over 1.207s wall clock time, 46.4M memory peak, 96K written to disk, 129.2K incoming IP traffic, 129.3K outgoing IP traffic.
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 5.
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Start request repeated too quickly.
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Failed with result 'start-limit-hit'.
+Jul 02 20:14:18 homelab systemd[1]: Failed to start OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:14:18 homelab systemd[1]: opencloud.service: Consumed 242ms CPU time over 157ms wall clock time, 46.4M memory peak, 96K written to disk, 129.2K incoming IP traffic, 129.3K outgoing IP traffic.
+Jul 02 20:19:21 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:19:21 homelab opencloud[35567]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:19:21+02:00","message":"could not bootstrap idp"}
+Jul 02 20:19:21 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:19:21 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:19:21 homelab systemd[1]: opencloud.service: Consumed 266ms CPU time over 584ms wall clock time, 48.4M memory peak, 112K written to disk, 177.2K incoming IP traffic, 177.3K outgoing IP traffic.
+Jul 02 20:19:22 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 1.
+Jul 02 20:19:22 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:19:23 homelab opencloud[35608]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:19:23+02:00","message":"could not bootstrap idp"}
+Jul 02 20:19:23 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:19:23 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:19:23 homelab systemd[1]: opencloud.service: Consumed 242ms CPU time over 1.331s wall clock time, 42.9M memory peak, 108K written to disk, 129.8K incoming IP traffic, 129.9K outgoing IP traffic.
+Jul 02 20:19:23 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 2.
+Jul 02 20:19:23 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:19:24 homelab opencloud[35624]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:19:24+02:00","message":"could not bootstrap idp"}
+Jul 02 20:19:24 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:19:24 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:19:24 homelab systemd[1]: opencloud.service: Consumed 235ms CPU time over 1.307s wall clock time, 40.4M memory peak, 112K written to disk, 141.2K incoming IP traffic, 141.3K outgoing IP traffic.
+Jul 02 20:19:24 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 3.
+Jul 02 20:19:24 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:19:25 homelab opencloud[35639]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:19:25+02:00","message":"could not bootstrap idp"}
+Jul 02 20:19:25 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:19:25 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:19:25 homelab systemd[1]: opencloud.service: Consumed 307ms CPU time over 1.364s wall clock time, 52.4M memory peak, 136K written to disk, 197.6K incoming IP traffic, 197.8K outgoing IP traffic.
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 4.
+Jul 02 20:19:26 homelab systemd[1]: Started OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:19:26 homelab opencloud[35653]: {"level":"fatal","service":"idp","error":"invalid iss value, URL must start with https://","time":"2026-07-02T20:19:26+02:00","message":"could not bootstrap idp"}
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Main process exited, code=exited, status=1/FAILURE
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Failed with result 'exit-code'.
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Consumed 168ms CPU time over 743ms wall clock time, 32.7M memory peak, 120K written to disk, 17.1K incoming IP traffic, 17.1K outgoing IP traffic.
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Scheduled restart job, restart counter is at 5.
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Start request repeated too quickly.
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Failed with result 'start-limit-hit'.
+Jul 02 20:19:26 homelab systemd[1]: Failed to start OpenCloud - a secure and private way to store, access, and share your files.
+Jul 02 20:19:26 homelab systemd[1]: opencloud.service: Consumed 168ms CPU time over 245ms wall clock time, 32.7M memory peak, 120K written to disk, 17.1K incoming IP traffic, 17.1K outgoing IP traffic.
