@@ -51,8 +51,7 @@
 
   environment.sessionVariables = {
     XCURSOR_THEME = "Adwaita";
-    XCURSOR_SIZE = "24";
-    _JAVA_AWT_WM_NONREPARENTING = "1";
+    XCURSOR_SIZE = "48";
   };
 
   environment.systemPackages = with pkgs; [
