@@ -33,7 +33,6 @@ in
       // {
         fav-icon = [
           "org.gnome.Nautilus.desktop"
-          "discord.desktop"
           "brave-browser.desktop"
           "brave-pjibgclleladliembfgfagdaldikeohf-Default.desktop"
           "brave-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"
