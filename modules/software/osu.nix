@@ -24,6 +24,9 @@ in {
     ];
 
     home-manager.users.${hostVariables.username} = {
+      xdg.configFile."mimeapps.list".force = true;
+      xdg.dataFile."applications/mimeapps.list".force = true;
+
       xdg.mimeApps = {
         enable = true;
         defaultApplications = {
