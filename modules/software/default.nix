@@ -6,6 +6,7 @@
     ./git.nix
     ./noisetorch.nix
     ./ollama.nix
+    ./osu.nix
     ./tmux.nix
     ./wine.nix
   ];

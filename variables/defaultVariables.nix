@@ -19,6 +19,7 @@
       gnome = true;
     };
     homelab = {
+      couchdb = false;
       netbird = false;
       obsidian = false;
       opencloud = false;
@@ -29,6 +30,7 @@
       flatpak = false;
       git = true;
       noisetorch = true;
+      osu = false;
       tmux = false;
       wine = false;
       ollama = false;
@@ -54,6 +56,15 @@
   gnome = {
     fav-icon = [];
     idle-delay = 0;
+  };
+  couchdb = {
+    address = "0.0.0.0";
+    adminPasswordFile = "/var/lib/couchdb/secrets/admin-password";
+    adminUser = "obsidian";
+    corsOrigins = "app://obsidian.md,capacitor://localhost,http://localhost";
+    databaseName = "obsidian";
+    networkInterface = "wt0";
+    port = 5984;
   };
   netbird = {
     client = {
@@ -83,5 +94,16 @@
       dataStoreEncryptionKeyFile = "/var/lib/netbird/secrets/data-store-encryption-key";
       turnSecretFile = "/var/lib/netbird/secrets/turn-secret";
     };
+  };
+  opencloud = {
+    address = "0.0.0.0";
+    environment = {
+      OC_INSECURE = "true";
+    };
+    environmentFile = null;
+    networkInterface = "wt0";
+    port = 9200;
+    stateDir = "/var/lib/opencloud";
+    url = null;
   };
 }

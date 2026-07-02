@@ -15,7 +15,9 @@ in
         homelab =
           default.modules.homelab
           // {
+            couchdb = true;
             netbird = true;
+            opencloud = true;
           };
         software =
           default.modules.software

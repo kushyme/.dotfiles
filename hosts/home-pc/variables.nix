@@ -17,6 +17,7 @@ in
           // {
             display-link = false;
             noisetorch = false;
+            osu = true;
           };
         systemSettings =
           default.modules.systemSettings

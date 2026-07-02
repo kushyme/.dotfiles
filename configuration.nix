@@ -26,6 +26,7 @@
   modules.driver.amdgpu.enable = hostVariables.modules.driver.amdgpu;
   modules.driver.nvidia.enable = hostVariables.modules.driver.nvidia;
   modules.gui.gnome.enable = hostVariables.modules.gui.gnome;
+  modules.homelab.couchdb.enable = hostVariables.modules.homelab.couchdb;
   modules.homelab.netbird.enable = hostVariables.modules.homelab.netbird;
   modules.homelab.obsidian.enable = hostVariables.modules.homelab.obsidian;
   modules.homelab.opencloud.enable = hostVariables.modules.homelab.opencloud;
@@ -34,6 +35,7 @@
   modules.software.flatpak.enable = hostVariables.modules.software.flatpak;
   modules.software.git.enable = hostVariables.modules.software.git;
   modules.software.noisetorch.enable = hostVariables.modules.software.noisetorch;
+  modules.software.osu.enable = hostVariables.modules.software.osu;
   modules.software.tmux.enable = hostVariables.modules.software.tmux;
   modules.software.wine.enable = hostVariables.modules.software.wine;
   modules.software.ollama.enable = hostVariables.modules.software.ollama;
