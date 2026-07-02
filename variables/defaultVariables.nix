@@ -21,7 +21,6 @@
     homelab = {
       couchdb = false;
       netbird = false;
-      obsidian = false;
       opencloud = false;
     };
     software = {

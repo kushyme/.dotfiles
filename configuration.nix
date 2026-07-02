@@ -28,7 +28,6 @@
   modules.gui.gnome.enable = hostVariables.modules.gui.gnome;
   modules.homelab.couchdb.enable = hostVariables.modules.homelab.couchdb;
   modules.homelab.netbird.enable = hostVariables.modules.homelab.netbird;
-  modules.homelab.obsidian.enable = hostVariables.modules.homelab.obsidian;
   modules.homelab.opencloud.enable = hostVariables.modules.homelab.opencloud;
   modules.software.displaylink.enable = hostVariables.modules.software.display-link;
   modules.software.docker.enable = hostVariables.modules.software.docker;
