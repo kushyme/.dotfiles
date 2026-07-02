@@ -16,7 +16,6 @@ in
           default.modules.homelab
           // {
             couchdb = true;
-            netbird = true;
             opencloud = true;
           };
         software =
@@ -26,6 +25,7 @@ in
             docker = true;
             flatpak = false;
             git = true;
+            netbird = true;
             noisetorch = false;
             tmux = true;
             wine = false;

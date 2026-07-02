@@ -16,6 +16,7 @@ in
           default.modules.software
           // {
             display-link = false;
+            netbird = true;
             noisetorch = false;
             osu = true;
           };

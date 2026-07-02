@@ -33,6 +33,7 @@
   modules.software.docker.enable = hostVariables.modules.software.docker;
   modules.software.flatpak.enable = hostVariables.modules.software.flatpak;
   modules.software.git.enable = hostVariables.modules.software.git;
+  modules.software.netbird.enable = hostVariables.modules.software.netbird;
   modules.software.noisetorch.enable = hostVariables.modules.software.noisetorch;
   modules.software.osu.enable = hostVariables.modules.software.osu;
   modules.software.tmux.enable = hostVariables.modules.software.tmux;

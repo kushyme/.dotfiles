@@ -28,6 +28,7 @@
       docker = true;
       flatpak = false;
       git = true;
+      netbird = false;
       noisetorch = true;
       osu = false;
       tmux = false;
@@ -79,7 +80,6 @@
       useRoutingFeatures = "none";
     };
     server = {
-      enable = false;
       domain = "";
       enableNginx = true;
       enableCoturn = true;
