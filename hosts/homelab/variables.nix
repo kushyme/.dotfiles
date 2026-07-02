@@ -12,6 +12,11 @@ in
           // {
             gnome = false;
           };
+        homelab =
+          default.modules.homelab
+          // {
+            netbird = true;
+          };
         software =
           default.modules.software
           // {
