@@ -10,5 +10,6 @@
     ./osu.nix
     ./tmux.nix
     ./wine.nix
+    ./zed.nix
   ];
 }

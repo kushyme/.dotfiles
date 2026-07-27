@@ -39,6 +39,7 @@
   modules.software.tmux.enable = hostVariables.modules.software.tmux;
   modules.software.wine.enable = hostVariables.modules.software.wine;
   modules.software.ollama.enable = hostVariables.modules.software.ollama;
+  modules.software.zed.enable = hostVariables.modules.software.zed-editor;
   modules.system.bootanimation.enable = hostVariables.modules.systemSettings.bootanimation;
   modules.system.gaming.enable = hostVariables.modules.systemSettings.gaming;
   modules.system.virtualization.enable = hostVariables.modules.systemSettings.virtualization;

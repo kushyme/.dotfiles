@@ -34,6 +34,7 @@
       tmux = false;
       wine = false;
       ollama = false;
+      zed-editor = false;
     };
     systemSettings = {
       bootanimation = true;
