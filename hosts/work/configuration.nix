@@ -79,6 +79,7 @@
     nodejs_24
     uv
     fastfetch
+    zed-editor
   ];
 
   system.stateVersion = hostVariables.stateVersion;
