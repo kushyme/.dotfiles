@@ -39,7 +39,7 @@ in
           "brave-pjibgclleladliembfgfagdaldikeohf-Default.desktop"
           "brave-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"
           "brave-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"
-          "idea.desktop"
+          "dev.zed.Zed.desktop"
           "bruno.desktop"
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"
