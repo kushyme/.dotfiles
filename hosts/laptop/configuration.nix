@@ -57,7 +57,6 @@
       ];
     })
     unstable.bruno
-    jetbrains.idea
     discord
     keepassxc
     github-desktop
@@ -71,6 +70,7 @@
     zip
     unzip
     fastfetch
+    zed-editor
   ];
 
   system.stateVersion = hostVariables.stateVersion;

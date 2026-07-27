@@ -19,6 +19,7 @@ in
             netbird = true;
             noisetorch = false;
             osu = true;
+            zed-editor = true;
           };
         systemSettings =
           default.modules.systemSettings
@@ -46,7 +47,7 @@ in
           "brave-browser.desktop"
           "spotify.desktop"
           "steam.desktop"
-          "idea.desktop"
+          "dev.zed.Zed.desktop"
           "bruno.desktop"
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"

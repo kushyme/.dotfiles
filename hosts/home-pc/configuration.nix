@@ -60,7 +60,6 @@
     })
     unstable.bruno
     spotify
-    jetbrains.idea
     discord
     keepassxc
     github-desktop
@@ -90,6 +89,7 @@
     gimp
     fastfetch
     geary
+    zed-editor
   ];
 
   boot.extraModprobeConfig = ''

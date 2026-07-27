@@ -16,6 +16,7 @@ in
           default.modules.software
           // {
             display-link = false;
+            zed-editor = true;
           };
       };
     git =
@@ -36,7 +37,7 @@ in
           "discord.desktop"
           "brave-browser.desktop"
           "spotify.desktop"
-          "idea.desktop"
+          "dev.zed.Zed.desktop"
           "bruno.desktop"
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"
