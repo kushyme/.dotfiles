@@ -52,12 +52,17 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    (unstable.brave.override {
-      commandLineArgs = [
-        "--enable-features=UseOzonePlatform"
-        "--ozone-platform=wayland"
-      ];
+    (symlinkJoin {
+      name = "brave-wayland";
+      paths = [unstable.brave];
+      nativeBuildInputs = [makeWrapper];
+      postBuild = ''
+        wrapProgram $out/bin/brave \
+          --add-flags "--enable-features=UseOzonePlatform" \
+          --add-flags "--ozone-platform=wayland"
+      '';
     })
+    winetricks
     unstable.bruno
     spotify
     discord
@@ -66,7 +71,15 @@
     vscode-with-extensions
     obsidian
     gh
-    lunar-client
+    (symlinkJoin {
+      name = "lunar-client-wayland-fix";
+      paths = [lunar-client];
+      nativeBuildInputs = [makeWrapper];
+      postBuild = ''
+        wrapProgram $out/bin/lunarclient \
+          --set __NV_DISABLE_EXPLICIT_SYNC 1
+      '';
+    })
     desmume
     azahar
     zip
