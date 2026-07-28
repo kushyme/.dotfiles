@@ -65,7 +65,7 @@
           theme = {
             mode = "dark";
             light = "One Light";
-            dark = "Ayu Dark";
+            dark = "Gruvbox Dark Hard";
           };
           auto_install_extensions = {
             material-icon-theme = true;
