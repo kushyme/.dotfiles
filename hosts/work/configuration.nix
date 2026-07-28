@@ -56,11 +56,15 @@
   };
 
   environment.systemPackages = with pkgs; [
-    (unstable.brave.override {
-      commandLineArgs = [
-        "--enable-features=UseOzonePlatform"
-        "--ozone-platform=wayland"
-      ];
+    (symlinkJoin {
+      name = "brave-wayland";
+      paths = [unstable.brave];
+      nativeBuildInputs = [makeWrapper];
+      postBuild = ''
+        wrapProgram $out/bin/brave \
+          --add-flags "--enable-features=UseOzonePlatform" \
+          --add-flags "--ozone-platform=wayland"
+      '';
     })
     unstable.bruno
     unstable.jetbrains.idea
