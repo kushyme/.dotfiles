@@ -2,6 +2,7 @@
   config,
   lib,
   hostVariables,
+  pkgs,
   ...
 }: let
   cfg = hostVariables.opencloud;
@@ -17,6 +18,9 @@ in {
   config = lib.mkIf config.modules.homelab.opencloud.enable {
     services.opencloud = {
       enable = true;
+      package = pkgs.unstable.opencloud;
+      webPackage = pkgs.unstable.opencloud.web;
+      idpWebPackage = pkgs.unstable.opencloud.idp-web;
       address = cfg.address;
       port = cfg.port;
       inherit url;
