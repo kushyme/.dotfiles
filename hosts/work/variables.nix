@@ -40,6 +40,7 @@ in
           "brave-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"
           "brave-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"
           "dev.zed.Zed.desktop"
+          "SourceGit.desktop"
           "bruno.desktop"
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"
