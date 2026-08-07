@@ -75,6 +75,7 @@
     unzip
     fastfetch
     zed-editor
+    sourcegit
   ];
 
   system.stateVersion = hostVariables.stateVersion;

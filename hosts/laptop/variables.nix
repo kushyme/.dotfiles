@@ -38,6 +38,7 @@ in
           "brave-browser.desktop"
           "spotify.desktop"
           "dev.zed.Zed.desktop"
+          "SourceGit.desktop"
           "bruno.desktop"
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"

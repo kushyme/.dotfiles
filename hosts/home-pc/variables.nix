@@ -48,6 +48,7 @@ in
           "spotify.desktop"
           "steam.desktop"
           "dev.zed.Zed.desktop"
+          "SourceGit.desktop"
           "bruno.desktop"
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"

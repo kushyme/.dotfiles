@@ -103,6 +103,7 @@
     fastfetch
     geary
     zed-editor
+    sourcegit
   ];
 
   boot.extraModprobeConfig = ''
