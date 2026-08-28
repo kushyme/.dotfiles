@@ -56,6 +56,7 @@
       inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.junie
       inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.codex
       inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.copilot-cli
+      inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claude-code
     ];
 
   fonts.packages = with pkgs; [
