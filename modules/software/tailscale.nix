@@ -43,6 +43,10 @@ in {
         ++ lib.optional cfg.advertiseExitNode "--advertise-exit-node";
     };
 
+    # `tailscale serve` terminates TLS inside tailscaled, so its listener still
+    # has to be reachable through the host firewall on the tailnet interface.
+    networking.firewall.interfaces.${cfg.interfaceName}.allowedTCPPorts = cfg.servePorts;
+
     # MagicDNS needs a resolver that accepts Tailscale's split-DNS routes;
     # NetworkManager writing /etc/resolv.conf on its own does not.
     services.resolved.enable = lib.mkDefault true;

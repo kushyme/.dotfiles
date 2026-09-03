@@ -81,13 +81,14 @@
       permitCertUid = null;
       port = 41641;
       preauthorized = null;
+      servePorts = [];
       useRoutingFeatures = "none";
     };
   };
   opencloud = {
-    address = "0.0.0.0";
+    address = "127.0.0.1";
     environment = {
-      OC_INSECURE = "false";
+      OC_INSECURE = "true";
     };
     environmentFile = null;
     networkInterface = "tailscale0";

@@ -48,9 +48,18 @@ in
           }
         ];
       };
+    tailscale =
+      default.tailscale
+      // {
+        client =
+          default.tailscale.client
+          // {
+            servePorts = [443];
+          };
+      };
     opencloud =
       default.opencloud
       // {
-        url = "https://homelab.tailf15ea4.ts.net:9200";
+        url = "https://homelab.tailf15ea4.ts.net";
       };
   }
