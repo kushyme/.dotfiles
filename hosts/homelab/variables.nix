@@ -25,8 +25,8 @@ in
             docker = true;
             flatpak = false;
             git = true;
-            netbird = true;
             noisetorch = false;
+            tailscale = true;
             tmux = true;
             wine = false;
             ollama = false;

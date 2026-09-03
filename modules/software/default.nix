@@ -4,10 +4,10 @@
     ./docker.nix
     ./flatpak.nix
     ./git.nix
-    ./netbird.nix
     ./noisetorch.nix
     ./ollama.nix
     ./osu.nix
+    ./tailscale.nix
     ./tmux.nix
     ./wine.nix
     ./zed.nix

@@ -20,7 +20,6 @@
     };
     homelab = {
       couchdb = false;
-      netbird = false;
       opencloud = false;
     };
     software = {
@@ -28,9 +27,9 @@
       docker = true;
       flatpak = false;
       git = true;
-      netbird = false;
       noisetorch = true;
       osu = false;
+      tailscale = false;
       tmux = false;
       wine = false;
       ollama = false;
@@ -64,35 +63,25 @@
     adminUser = "obsidian";
     corsOrigins = "app://obsidian.md,capacitor://localhost,http://localhost";
     databaseName = "obsidian";
-    networkInterface = "wt0";
+    networkInterface = "tailscale0";
     port = 5984;
   };
-  netbird = {
+  tailscale = {
     client = {
-      enable = true;
-      autoStart = true;
-      environment = {};
-      hardened = false;
-      interface = "wt0";
-      logLevel = "info";
-      managementUrl = null;
-      port = 51820;
-      setupKeyFile = null;
+      advertiseExitNode = false;
+      advertiseRoutes = [];
+      authKeyFile = null;
+      disableTaildrop = false;
+      ephemeral = null;
+      extraSetFlags = [];
+      extraUpFlags = [];
+      interfaceName = "tailscale0";
+      loginServer = null;
+      openFirewall = false;
+      permitCertUid = null;
+      port = 41641;
+      preauthorized = null;
       useRoutingFeatures = "none";
-    };
-    server = {
-      domain = "";
-      enableNginx = true;
-      enableCoturn = true;
-      acmeEmail = "";
-      oidcConfigEndpoint = "";
-      authAuthority = "";
-      authAudience = "netbird";
-      authClientId = "netbird";
-      authSupportedScopes = "openid profile email";
-      coturnPasswordFile = "/var/lib/netbird/secrets/coturn-password";
-      dataStoreEncryptionKeyFile = "/var/lib/netbird/secrets/data-store-encryption-key";
-      turnSecretFile = "/var/lib/netbird/secrets/turn-secret";
     };
   };
   opencloud = {
@@ -101,7 +90,7 @@
       OC_INSECURE = "false";
     };
     environmentFile = null;
-    networkInterface = "wt0";
+    networkInterface = "tailscale0";
     port = 9200;
     stateDir = "/var/lib/opencloud";
     url = null;
