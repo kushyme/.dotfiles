@@ -89,6 +89,7 @@
     address = "127.0.0.1";
     environment = {
       OC_INSECURE = "true";
+      PROXY_TLS = "false";
     };
     environmentFile = null;
     networkInterface = "tailscale0";
