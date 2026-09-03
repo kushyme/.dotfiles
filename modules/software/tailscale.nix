@@ -42,5 +42,9 @@ in {
         ++ lib.optional (cfg.advertiseRoutes != []) "--advertise-routes=${lib.concatStringsSep "," cfg.advertiseRoutes}"
         ++ lib.optional cfg.advertiseExitNode "--advertise-exit-node";
     };
+
+    # MagicDNS needs a resolver that accepts Tailscale's split-DNS routes;
+    # NetworkManager writing /etc/resolv.conf on its own does not.
+    services.resolved.enable = lib.mkDefault true;
   };
 }

@@ -51,6 +51,6 @@ in
     opencloud =
       default.opencloud
       // {
-        url = "https://100.96.151.104:9200";
+        url = "https://homelab.tailf15ea4.ts.net:9200";
       };
   }

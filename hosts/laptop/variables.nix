@@ -17,6 +17,7 @@ in
           // {
             display-link = false;
             zed-editor = true;
+            tailscale = true;
           };
       };
     git =
