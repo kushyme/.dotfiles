@@ -67,10 +67,8 @@
       '';
     })
     unstable.bruno
-    unstable.jetbrains.idea
     discord
     keepassxc
-    github-desktop
     vscode-with-extensions
     obsidian
     gh
@@ -85,6 +83,7 @@
     fastfetch
     zed-editor
     sourcegit
+    dig
   ];
 
   system.stateVersion = hostVariables.stateVersion;

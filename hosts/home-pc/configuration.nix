@@ -67,7 +67,6 @@
     spotify
     discord
     keepassxc
-    github-desktop
     vscode-with-extensions
     obsidian
     gh
@@ -104,6 +103,7 @@
     geary
     zed-editor
     sourcegit
+    dig
   ];
 
   boot.extraModprobeConfig = ''

@@ -39,6 +39,7 @@
     unzip
     zip
     fastfetch
+    dig
   ];
   powerManagement.cpuFreqGovernor = "performance";
   system.stateVersion = hostVariables.stateVersion;
