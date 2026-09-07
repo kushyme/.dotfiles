@@ -20,6 +20,12 @@ in
             zed-editor = true;
             tailscale = true;
           };
+        systemSettings =
+          default.modules.systemSettings
+          // {
+            gaming = false;
+            virtualization = false;
+          };
       };
     git =
       default.git
