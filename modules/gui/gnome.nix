@@ -25,23 +25,7 @@
       zsh-clipboard
     ];
 
-    home-manager.useGlobalPkgs = true;
-    home-manager.useUserPackages = true;
     home-manager.users.${hostVariables.username} = {
-      home.packages = with pkgs; [
-      ];
-      programs.zsh = {
-        enable = true;
-        enableCompletion = true;
-
-        oh-my-zsh = {
-          enable = true;
-          plugins = ["git"];
-          theme = "robbyrussell";
-        };
-      };
-
-      home.stateVersion = "26.05";
       dconf.settings = {
         "org/gnome/shell" = {
           disable-user-extensions = false;

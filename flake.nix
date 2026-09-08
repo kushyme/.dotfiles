@@ -69,6 +69,5 @@
         hostVariables = import ./hosts/homelab/variables.nix;
       };
     };
-    overlays = import ./overlays.nix inputs;
   };
 }

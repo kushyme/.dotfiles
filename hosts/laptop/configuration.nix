@@ -73,7 +73,6 @@
     zip
     unzip
     fastfetch
-    zed-editor
     sourcegit
     dig
   ];

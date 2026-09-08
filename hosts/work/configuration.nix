@@ -81,7 +81,6 @@
     nodejs_24
     uv
     fastfetch
-    zed-editor
     sourcegit
     dig
   ];

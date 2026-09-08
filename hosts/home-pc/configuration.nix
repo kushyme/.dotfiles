@@ -85,7 +85,6 @@
     unzip
     jdk
     libreoffice-qt
-    docker
     dbeaver-bin
     nodejs_24
     easyeffects
@@ -101,7 +100,6 @@
     gimp
     fastfetch
     geary
-    zed-editor
     sourcegit
     dig
   ];
