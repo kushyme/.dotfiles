@@ -7,6 +7,14 @@ in
     modules =
       default.modules
       // {
+        gui =
+          default.modules.gui
+          // {
+            gnome = true;
+            noctalia = true;
+            noctalia-greeter = true;
+            umbriel = true;
+          };
         driver =
           default.modules.driver
           // {
@@ -36,6 +44,23 @@ in
             condition = "gitdir:~/Dev/";
           }
         ];
+      };
+    umbriel =
+      default.umbriel
+      // {
+        keyboard =
+          default.umbriel.keyboard
+          // {
+            layout = "de";
+          };
+      };
+    noctalia-greeter =
+      default.noctalia-greeter
+      // {
+        extraSettings = {
+          cursor.size = 48; # matches XCURSOR_SIZE from the host configuration
+          keyboard.layout = "de";
+        };
       };
     gnome =
       default.gnome

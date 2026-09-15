@@ -26,6 +26,9 @@
   modules.driver.amdgpu.enable = hostVariables.modules.driver.amdgpu;
   modules.driver.nvidia.enable = hostVariables.modules.driver.nvidia;
   modules.gui.gnome.enable = hostVariables.modules.gui.gnome;
+  modules.gui.noctalia.enable = hostVariables.modules.gui.noctalia;
+  modules.gui.noctalia-greeter.enable = hostVariables.modules.gui.noctalia-greeter;
+  modules.gui.umbriel.enable = hostVariables.modules.gui.umbriel;
   modules.homelab.couchdb.enable = hostVariables.modules.homelab.couchdb;
   modules.homelab.opencloud.enable = hostVariables.modules.homelab.opencloud;
   modules.software.displaylink.enable = hostVariables.modules.software.display-link;

@@ -17,6 +17,9 @@
     };
     gui = {
       gnome = true;
+      noctalia = false;
+      noctalia-greeter = false;
+      umbriel = false;
     };
     homelab = {
       couchdb = false;
@@ -56,6 +59,32 @@
   gnome = {
     fav-icon = [];
     idle-delay = 0;
+  };
+  noctalia = {
+    # Written to ~/.config/noctalia/config.toml and validated at build time.
+    # Left empty, Noctalia's own settings panel stays authoritative.
+    settings = {};
+  };
+  umbriel = {
+    terminal = "kgx";
+    fileManager = "nautilus";
+    # Extra commands started with the session, next to Noctalia itself.
+    autostart = [];
+    keyboard = {
+      layout = "";
+      variant = "";
+      options = "";
+    };
+    # Merged last into ~/.config/umbriel/config.toml: per-monitor [output.*]
+    # blocks, extra window rules, keybind overrides, ...
+    extraSettings = {};
+  };
+  noctalia-greeter = {
+    # Session picker label, as printed by `noctalia-greeter sessions` -- the
+    # Name= of the .desktop file, not its id.
+    defaultSession = "Umbriel";
+    # Merged last into /var/lib/noctalia-greeter/greeter.toml.
+    extraSettings = {};
   };
   couchdb = {
     address = "0.0.0.0";

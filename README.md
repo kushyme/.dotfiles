@@ -51,6 +51,52 @@ switch
 
 ---
 
+## Desktop environments
+
+`modules.gui.*` picks the desktop per host, and the flags combine freely:
+
+| Flag | What it turns on |
+| --- | --- |
+| `gnome` | GNOME with GDM, extensions and the dconf settings in `modules/gui/gnome.nix` |
+| `umbriel` | [Umbriel](https://github.com/noctalia-dev/umbriel), a wlroots compositor, registered as a session named `Umbriel` |
+| `noctalia` | [Noctalia](https://github.com/noctalia-dev/noctalia-shell), the shell and bar; Umbriel autostarts it |
+| `noctalia-greeter` | [Noctalia Greeter](https://github.com/noctalia-dev/noctalia-greeter) on greetd, **replacing GDM** |
+
+Leaving `gnome = true` next to the Noctalia stack keeps a GNOME session in the
+greeter's session picker, which is a useful fallback while Umbriel is still
+young.
+
+Host-level knobs for these live next to `gnome` in `variables.nix`:
+
+```nix
+umbriel = {
+  terminal = "kgx";
+  fileManager = "nautilus";
+  autostart = [];                 # extra commands started with the session
+  keyboard = { layout = "de"; variant = ""; options = ""; };
+  extraSettings = {};             # merged last into ~/.config/umbriel/config.toml
+};
+noctalia = {
+  settings = {};                  # empty keeps Noctalia's settings panel authoritative
+};
+noctalia-greeter = {
+  defaultSession = "Umbriel";     # label from `noctalia-greeter sessions`
+  extraSettings = {};             # merged last into /var/lib/noctalia-greeter/greeter.toml
+};
+```
+
+`extraSettings` is the escape hatch for anything the modules do not model, such
+as per-monitor `[output.*]` blocks:
+
+```nix
+extraSettings.output."DP-1" = {
+  mode = "2560x1440@144";
+  scale = 1.0;
+};
+```
+
+---
+
 ## Adding a New Host
 
 1. Create a new folder in `./hosts/`, e.g. `home-pc`
@@ -79,6 +125,9 @@ switch
     };
     gui = {
       gnome = true;
+      noctalia = false;
+      noctalia-greeter = false;
+      umbriel = false;
     };
     software = {
       display-link = false;

@@ -8,6 +8,12 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     llm-agents.url = "github:numtide/llm-agents.nix";
+
+    # The Noctalia family pins its own nixos-unstable; leaving it unfollowed
+    # keeps every package on the combination upstream actually tests.
+    noctalia.url = "github:noctalia-dev/noctalia-shell";
+    noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter";
+    umbriel.url = "github:noctalia-dev/umbriel";
     home-manager = {
       url = "github:nix-community/home-manager?ref=release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
