@@ -52,8 +52,12 @@
 
   environment.sessionVariables = {
     XCURSOR_THEME = "Adwaita";
-    XCURSOR_SIZE = "48";
+    XCURSOR_SIZE = toString hostVariables.cursorSize;
   };
+
+  # GTK apps, Chromium/Brave and the settings portal read the cursor size from
+  # gsettings instead of XCURSOR_SIZE, so keep it in sync.
+  home-manager.users.${hostVariables.username}.dconf.settings."org/gnome/desktop/interface".cursor-size = hostVariables.cursorSize;
 
   environment.systemPackages = with pkgs; [
     (symlinkJoin {

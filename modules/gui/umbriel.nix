@@ -32,9 +32,11 @@
           natural_scroll = true;
         };
         focus.follows_mouse = false;
-        # Cursor theme stays empty so it inherits XCURSOR_THEME. The size does
-        # not come from XCURSOR_SIZE (it defaults to 24), so hosts set
-        # input.cursor.size through extraSettings.
+        # umbriel never reads XCURSOR_THEME: an empty theme makes wlroots look
+        # for a "default" theme and fall back to its tiny built-in cursor, which
+        # ignores the size. XCURSOR_SIZE is ignored too (it defaults to 24), so
+        # hosts set input.cursor.size through extraSettings.
+        cursor.theme = "Adwaita";
       };
 
       layout = {
@@ -139,9 +141,10 @@
 
       window_rule = [
         # Selectorless, so later rules can still override individual blur keys.
+        # blur_optimized stays at its default (true): unoptimized blur recomputes
+        # per window every frame and drops frames on the iGPU at 2x 4K.
         {
           blur = true;
-          blur_optimized = false;
         }
         {
           match.app_id = "^dev.noctalia.Noctalia$";
@@ -187,6 +190,7 @@ in {
       programs.umbriel.enable = true;
 
       environment.systemPackages = with pkgs; [
+        adwaita-icon-theme # backs input.cursor.theme
         brightnessctl
         gnome-console # Mod+Return
         libnotify

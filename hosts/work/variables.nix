@@ -1,9 +1,13 @@
 let
   default = import ./../../variables/defaultVariables.nix;
+  # Single source for every cursor size setting on this host (umbriel, the
+  # greeter, XCURSOR_SIZE and gsettings).
+  cursorSize = 24;
 in
   default
   // {
     host = "work";
+    inherit cursorSize;
     modules =
       default.modules
       // {
@@ -68,13 +72,13 @@ in
           };
         };
         # umbriel ignores XCURSOR_SIZE and defaults to 24, so mirror it here.
-        extraSettings.input.cursor.size = 48;
+        extraSettings.input.cursor.size = cursorSize;
       };
     noctalia-greeter =
       default.noctalia-greeter
       // {
         extraSettings = {
-          cursor.size = 48; # matches XCURSOR_SIZE from the host configuration
+          cursor.size = cursorSize;
           keyboard.layout = "de";
         };
       };
