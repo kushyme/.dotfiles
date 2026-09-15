@@ -32,11 +32,13 @@
           natural_scroll = true;
         };
         focus.follows_mouse = false;
-        # Cursor stays empty so it inherits XCURSOR_THEME / XCURSOR_SIZE.
+        # Cursor theme stays empty so it inherits XCURSOR_THEME. The size does
+        # not come from XCURSOR_SIZE (it defaults to 24), so hosts set
+        # input.cursor.size through extraSettings.
       };
 
       layout = {
-        mode = "scrolling";
+        mode = "master";
         gap = 8;
         width_presets = [0.333 0.5 0.667];
       };
@@ -67,7 +69,7 @@
           "Mod+H" = "window-focus-left";
           "Mod+J" = "window-focus-down";
           "Mod+K" = "window-focus-up";
-          "Mod+L" = "window-focus-right";
+          # Mod+L locks the session (see the noctalia binds below).
           "Mod+F1" = "window-focus-next";
           "Mod+WheelUp" = "window-focus-left";
           "Mod+WheelDown" = "window-focus-right";
@@ -129,6 +131,10 @@
           "Mod+C" = "spawn:noctalia msg panel-toggle control-center";
           "Mod+V" = "spawn:noctalia msg panel-toggle clipboard";
           "Print" = "spawn:noctalia msg screenshot-region";
+          "Mod+L" = {
+            action = "spawn:noctalia msg session lock";
+            repeat = false;
+          };
         };
 
       window_rule = [

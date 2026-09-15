@@ -53,6 +53,22 @@ in
           // {
             layout = "de";
           };
+        # Keyed by monitor (make model serial) so the order survives connector
+        # renumbering. Laptop panel left, then the two HP E27k side by side.
+        # The 27" 4K panels run at 1.5, so each is 2560 logical pixels wide.
+        extraSettings.output = {
+          "Chimei Innolux Corporation 0x1538 Unknown".position = [0 0];
+          "HP Inc. HP E27k G5 CNK50201KV" = {
+            position = [1920 0];
+            scale = 1.5;
+          };
+          "HP Inc. HP E27k G5 CNK43620YT" = {
+            position = [4480 0];
+            scale = 1.5;
+          };
+        };
+        # umbriel ignores XCURSOR_SIZE and defaults to 24, so mirror it here.
+        extraSettings.input.cursor.size = 48;
       };
     noctalia-greeter =
       default.noctalia-greeter
