@@ -63,16 +63,22 @@ in
         extraSettings.output = {
           "Chimei Innolux Corporation 0x1538 Unknown".position = [0 0];
           "HP Inc. HP E27k G5 CNK50201KV" = {
+            mode = "3840x2160@60";
             position = [1920 0];
             scale = 1.5;
           };
           "HP Inc. HP E27k G5 CNK43620YT" = {
+            mode = "3840x2160@60";
             position = [4480 0];
             scale = 1.5;
           };
         };
-        # umbriel ignores XCURSOR_SIZE and defaults to 24, so mirror it here.
-        extraSettings.input.cursor.size = cursorSize;
+        extraSettings.input.cursor = {
+          # umbriel ignores XCURSOR_SIZE and defaults to 24, so mirror it here.
+          size = cursorSize;
+          # The hardware cursor vanishes at the left edge of the laptop panel.
+          hardware_cursor = false;
+        };
       };
     noctalia-greeter =
       default.noctalia-greeter

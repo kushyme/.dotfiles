@@ -61,8 +61,9 @@
     idle-delay = 0;
   };
   noctalia = {
-    # Written to ~/.config/noctalia/config.toml and validated at build time.
-    # Left empty, Noctalia's own settings panel stays authoritative.
+    # Merged over the module defaults (the dock) into
+    # ~/.config/noctalia/config.toml and validated at build time. Changes made
+    # in Noctalia's settings panel still win (~/.local/state/noctalia/settings.toml).
     settings = {};
   };
   umbriel = {

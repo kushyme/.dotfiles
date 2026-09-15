@@ -7,6 +7,27 @@
   ...
 }: let
   cfg = config.modules.gui.noctalia;
+
+  settings =
+    lib.recursiveUpdate {
+      # Mirrors the GNOME dash-to-dock setup in gnome.nix: fixed at the bottom
+      # on every monitor, running-window dots, app grid button at the end.
+      dock = {
+        enabled = true;
+        position = "bottom";
+        icon_size = 42;
+        auto_hide = false;
+        show_running = true;
+        show_dots = true;
+        magnification = false;
+        inactive_scale = 1.0;
+        inactive_opacity = 1.0;
+        launcher_position = "end";
+        # Same favorites as GNOME; the dock matches the desktop file stem.
+        pinned = map (lib.removeSuffix ".desktop") hostVariables.gnome.fav-icon;
+      };
+    }
+    hostVariables.noctalia.settings;
 in {
   imports = [
     inputs.noctalia.nixosModules.default
@@ -44,7 +65,7 @@ in {
       home-manager.users.${hostVariables.username} = {
         programs.noctalia = {
           enable = true;
-          settings = hostVariables.noctalia.settings;
+          inherit settings;
         };
       };
     })
