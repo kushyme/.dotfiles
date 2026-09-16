@@ -40,7 +40,7 @@
       };
 
       layout = {
-        mode = "master";
+        mode = "Scrolling";
         gap = 8;
         width_presets = [0.333 0.5 0.667];
       };
