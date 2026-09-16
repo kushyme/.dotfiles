@@ -26,6 +26,7 @@
         # Same favorites as GNOME; the dock matches the desktop file stem.
         pinned = map (lib.removeSuffix ".desktop") hostVariables.gnome.fav-icon;
       };
+      wallpaper.directory = "/home/${hostVariables.username}/.dotfiles/assets/wallpaper";
     }
     hostVariables.noctalia.settings;
 in {
