@@ -53,6 +53,7 @@
   environment.systemPackages =
     (with pkgs; [
       alejandra
+      tlrc
     ])
     ++ [
       inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.copilot-cli
