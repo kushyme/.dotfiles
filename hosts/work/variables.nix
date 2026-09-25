@@ -1,7 +1,5 @@
 let
   default = import ./../../variables/defaultVariables.nix;
-  # Single source for every cursor size setting on this host (umbriel, the
-  # greeter, XCURSOR_SIZE and gsettings).
   cursorSize = 24;
 in
   default

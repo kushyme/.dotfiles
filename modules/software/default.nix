@@ -1,5 +1,6 @@
 {
   imports = [
+    ./comfyui.nix
     ./displaylink.nix
     ./docker.nix
     ./flatpak.nix

@@ -23,6 +23,7 @@ in
         software =
           default.modules.software
           // {
+            comfyui = true;
             display-link = false;
             noisetorch = false;
             osu = true;

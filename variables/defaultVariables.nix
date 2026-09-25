@@ -26,6 +26,7 @@
       opencloud = false;
     };
     software = {
+      comfyui = false;
       display-link = true;
       docker = true;
       flatpak = false;
@@ -61,31 +62,27 @@
     idle-delay = 0;
   };
   noctalia = {
-    # Merged over the module defaults (the dock) into
-    # ~/.config/noctalia/config.toml and validated at build time. Changes made
-    # in Noctalia's settings panel still win (~/.local/state/noctalia/settings.toml).
     settings = {};
   };
   umbriel = {
     terminal = "kgx";
     fileManager = "nautilus";
-    # Extra commands started with the session, next to Noctalia itself.
     autostart = [];
     keyboard = {
       layout = "";
       variant = "";
       options = "";
     };
-    # Merged last into ~/.config/umbriel/config.toml: per-monitor [output.*]
-    # blocks, extra window rules, keybind overrides, ...
     extraSettings = {};
   };
   noctalia-greeter = {
-    # Session picker label, as printed by `noctalia-greeter sessions` -- the
-    # Name= of the .desktop file, not its id.
     defaultSession = "Umbriel";
-    # Merged last into /var/lib/noctalia-greeter/greeter.toml.
     extraSettings = {};
+  };
+  comfyui = {
+    listen = ["127.0.0.1" "::1"];
+    port = 8188;
+    extraArgs = [];
   };
   couchdb = {
     address = "0.0.0.0";

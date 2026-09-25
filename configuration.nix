@@ -31,6 +31,7 @@
   modules.gui.umbriel.enable = hostVariables.modules.gui.umbriel;
   modules.homelab.couchdb.enable = hostVariables.modules.homelab.couchdb;
   modules.homelab.opencloud.enable = hostVariables.modules.homelab.opencloud;
+  modules.software.comfyui.enable = hostVariables.modules.software.comfyui;
   modules.software.displaylink.enable = hostVariables.modules.software.display-link;
   modules.software.docker.enable = hostVariables.modules.software.docker;
   modules.software.flatpak.enable = hostVariables.modules.software.flatpak;
