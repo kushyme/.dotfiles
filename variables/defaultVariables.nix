@@ -80,8 +80,17 @@
     extraSettings = {};
   };
   comfyui = {
-    listen = ["127.0.0.1" "::1"];
+    # ComfyUI ships no authentication, so the port stays on loopback unless a
+    # host says otherwise.
+    address = "127.0.0.1";
+    dataDir = "/var/lib/comfyui";
+    # Pinned to a dated tag rather than latest. CUDA 12.8 rather than 13.x
+    # because custom nodes still publish wheels built against 12.x.
+    image = "mmartial/comfyui-nvidia-docker:ubuntu24_cuda12.8-20260914";
     port = 8188;
+    # What ComfyUI-Manager is allowed to install: normal, normal-, weak.
+    securityLevel = "normal";
+    # Extra server flags, e.g. "--lowvram" to fit a smaller card.
     extraArgs = [];
   };
   couchdb = {
