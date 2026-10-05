@@ -92,9 +92,9 @@ in
         fav-icon = [
           "org.gnome.Nautilus.desktop"
           "brave-browser.desktop"
+          "brave-ompifgpmddkgmclendfeacglnodjjndh-Default.desktop"
+          "brave-eoficlgicibekocmfdomjbfnjmehnhcd-Default.desktop"
           "brave-pjibgclleladliembfgfagdaldikeohf-Default.desktop"
-          "brave-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"
-          "brave-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"
           "dev.zed.Zed.desktop"
           "SourceGit.desktop"
           "bruno.desktop"
