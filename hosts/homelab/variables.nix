@@ -41,6 +41,12 @@ in
     git =
       default.git
       // {
+        # headless: no secret service available for libsecret
+        extraConfig =
+          default.git.extraConfig
+          // {
+            credential-helper = "store";
+          };
         includes = [
           {
             path = "~/Dev/.gitconfig";

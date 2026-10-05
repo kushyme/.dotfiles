@@ -17,6 +17,7 @@
     home-manager.users.${hostVariables.username} = {
       programs.git = {
         enable = true;
+        package = pkgs.gitFull;
         lfs.enable = hostVariables.git.lfs;
         settings = {
           user = {

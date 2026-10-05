@@ -13,9 +13,9 @@ in
           default.modules.gui
           // {
             gnome = true;
-            noctalia = true;
-            noctalia-greeter = true;
-            umbriel = true;
+            noctalia = false;
+            noctalia-greeter = false;
+            umbriel = false;
           };
         driver =
           default.modules.driver

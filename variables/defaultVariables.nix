@@ -49,7 +49,7 @@
     lfs = true;
     extraConfig = {
       defaultBranch = "main";
-      credential-helper = "store";
+      credential-helper = "libsecret";
     };
     credentials = {
       email = "159010501+kushyme@users.noreply.github.com";
