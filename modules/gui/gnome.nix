@@ -38,8 +38,8 @@
           ];
         };
         "org/gnome/desktop/background" = {
-          picture-uri = "file:///home/${hostVariables.username}/.dotfiles/assets/aperturescience.png";
-          picture-uri-dark = "file:///home/${hostVariables.username}/.dotfiles/assets/aperturescience.png";
+          picture-uri = "file:///home/${hostVariables.username}/.dotfiles/assets/wallpaper/fuji.jpg";
+          picture-uri-dark = "file:///home/${hostVariables.username}/.dotfiles/assets/wallpaper/fuji.jpg";
           picture-options = "zoom"; # scaled, none, centred, zoom, streched, wallpaper, spanned
         };
         "org/gnome/desktop/interface" = {
