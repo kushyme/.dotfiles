@@ -101,6 +101,7 @@ in
           "org.keepassxc.KeePassXC.desktop"
           "obsidian.desktop"
           "org.gnome.Console.desktop"
+          "brave-mjoklplbddabcmpepnokjaffbmgbkkgg-Default.desktop"
         ];
         idle-delay = 300;
       };
