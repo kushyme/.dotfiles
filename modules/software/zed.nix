@@ -13,6 +13,8 @@
     environment.systemPackages = with pkgs; [
       nil
       nixd
+      helm-ls
+      yaml-language-server
     ];
 
     home-manager.users.${hostVariables.username} = {
@@ -26,6 +28,7 @@
           "xml"
           "sql"
           "terraform"
+          "helm"
         ];
         userSettings = {
           disable_ai = false;
@@ -72,6 +75,14 @@
             nix = true;
           };
           load_direnv = "shell_hook";
+          file_types = {
+            Helm = [
+              "**/templates/**/*.tpl"
+              "**/templates/**/*.yaml"
+              "**/templates/**/*.yml"
+              "**/templates/**/*.txt"
+            ];
+          };
           languages = {
             TypeScript = {
               format_on_save = "on";
