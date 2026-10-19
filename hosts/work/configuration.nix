@@ -87,6 +87,7 @@
     fastfetch
     sourcegit
     dig
+    k9s
   ];
 
   system.stateVersion = hostVariables.stateVersion;
