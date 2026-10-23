@@ -13,6 +13,7 @@
       enable = true;
     };
     services.desktopManager.gnome.enable = true;
+    services.udev.packages = [pkgs.gnome-settings-daemon];
 
     environment.systemPackages = with pkgs; [
       dconf-editor
@@ -21,6 +22,7 @@
       gnomeExtensions.user-themes
       gnomeExtensions.system-monitor
       gnomeExtensions.clipboard-history
+      gnomeExtensions.appindicator
       yaru-theme
       zsh-clipboard
     ];
@@ -35,6 +37,7 @@
             pkgs.gnomeExtensions.user-themes.extensionUuid
             pkgs.gnomeExtensions.system-monitor.extensionUuid
             pkgs.gnomeExtensions.clipboard-history.extensionUuid
+            pkgs.gnomeExtensions.appindicator.extensionUuid
           ];
         };
         "org/gnome/desktop/background" = {
