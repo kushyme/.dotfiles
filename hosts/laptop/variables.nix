@@ -19,6 +19,11 @@ in
             zed-editor = true;
             tailscale = true;
           };
+        systemSettings =
+          default.modules.systemSettings 
+          // {
+            gaming = true;
+          };
       };
     git =
       default.git
