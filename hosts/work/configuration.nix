@@ -88,6 +88,7 @@
     sourcegit
     dig
     k9s
+    drawio
   ];
 
   system.stateVersion = hostVariables.stateVersion;
