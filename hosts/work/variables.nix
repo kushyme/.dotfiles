@@ -28,7 +28,8 @@ in
             display-link = true;
             osu = false;
             zed-editor = true;
-            tailscale = true;
+            tailscale = false;
+            noisetorch = true;
           };
         systemSettings =
           default.modules.systemSettings
