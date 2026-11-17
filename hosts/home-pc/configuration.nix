@@ -1,4 +1,5 @@
 {
+  config,
   hostVariables,
   pkgs,
   ...
@@ -111,6 +112,10 @@
   powerManagement.cpuFreqGovernor = "performance";
 
   programs.gamemode.enable = true;
+
+  # 595.x causes recurring Xid 32/109 GPU faults on the RTX 2060 (Overwatch
+  # "rendering device lost"); 580.142 ran clean, so stay on the 580 branch.
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
 
   system.stateVersion = hostVariables.stateVersion;
 
