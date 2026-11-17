@@ -1,5 +1,4 @@
 {
-  config,
   hostVariables,
   pkgs,
   ...
@@ -112,13 +111,6 @@
   powerManagement.cpuFreqGovernor = "performance";
 
   programs.gamemode.enable = true;
-
-  # Xid 32/109 GPU faults on the RTX 2060 (Overwatch "rendering device lost")
-  # started when nixpkgs moved 6.12 -> 6.18 *and* 580 -> 595 at the same time.
-  # Pinning 580 alone on 6.18 still crashed (Xid 109, 2026-11-17), so go back
-  # to the last known-good combo: 6.12 LTS kernel + 580 driver.
-  boot.kernelPackages = pkgs.linuxPackages_6_12;
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
 
   system.stateVersion = hostVariables.stateVersion;
 
